@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="headings">
+                <!--Here inline CSS is for give the best look -->
+                <h1><span style="color : orangered;">B</span> <span style="color:orangered;">S</span>IMON <span style="color:orangered;">G</span>AME</h1>
+                <div class="highScore"></div>
+                <p class="level">Press <span style="color:orangered;">S</span> Or Click "<span style="color: orangered;">Start</span>" Button For Start The Game !</p>
+                <div class="errorMsg"></div>
+            </div>
+            <!--The boxes-->
+            <div class="boxes">
+                <div class="box1" number = "1"></div>
+                <div class="box2" number = "2"></div>
+                <div class="box3" number = "3"></div>
+                <div class="box4" number = "4"></div>
+            </div>
+            <div class="btns">
+            <button class="resBtn">Start</button>
+            <button class="homeBtn">Home</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".homeBtn").addEventListener("click" , () => {
+            location.href = "../index.html";
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

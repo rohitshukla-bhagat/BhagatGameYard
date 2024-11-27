@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game Rule</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ::selection {
+        background-color: orangered;
+        color: white;
+      }
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Host Grotesk", sans-serif;
+      }
+      .container {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .heading {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        margin-top: 0.3em;
+      }
+      .homeBtn {
+        color: white;
+        font-size: 1em;
+        font-weight: 600;
+        opacity: 0.9;
+        width: 5em;
+        height: 2.2em;
+        margin-top: 0.5em;
+        margin-left: 2em;
+        border: 2px solid rgba(255, 70, 3, 0.996);
+        border-radius: 0.3em;
+        background-color: rgba(255, 70, 3, 0.996);
+        cursor: pointer;
+        transition: all 0.2s linear;
+        &:hover {
+          box-shadow: 0px 0px 10px rgba(255, 70, 3, 0.996);
+          background-color: rgb(12, 12, 12);
+          color: whitesmoke;
+        }
+      }
+      .text {
+        width: 50%;
+        padding: 1em 2em;
+        margin-top: 1em;
+        border: none;
+        border-radius: 1em;
+        box-shadow: 0px 0px 10px orangered;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h2 {
+        justify-self: center;
+        margin: 0.5em 0;
+      }
+      @media screen and (width<1120px) {
+        .text {
+          width: 70%;
+        }
+        .heading {
+          width: 90%;
+        }
+      }
+      @media screen and (orientation: portrait) {
+        .text {
+          font-size: 0.8em;
+          width: 80%;
+        }
+      }
+      @media screen and (width<500px) {
+        .text {
+          width: 100%;
+        }
+        .heading {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h1><span style="color: orangered">B</span> SIMON GAME</h1>
+          <button class="homeBtn">
+            Home
+          </button>
+        </div>
+        <div class="summary">
+          <h2>📜 Game Summary 📚</h2>
+          <p>
+            ➡️ Welcome to the Simon Game, where you must remember the sequence
+            of colors as they blink one by one! You have to pay attention to the
+            colors and recall the right order as the levels increase. If you
+            forget the sequence, you lose, and your score will be displayed
+            above. Have fun and challenge your memory! 🎊
+          </p>
+        </div>
+        <div class="rules">
+          <h2>🎨 Simon Game Rules 🎮</h2>
+          <p>
+            1. 🌈 Color Selection: You will see 4 colors: Red, Green, Yellow,
+            and Blue, along with a Start button
+          </p>
+          <p>2. 🕹️ Start the Game: Click the Start button to begin.</p>
+          <p>
+            3. 💡 Blinked Color: After clicking, a color will blink, and you
+            must remember the blinked color.
+          </p>
+          <p>4. 🔔 Click the Color: Click on the blinked color.</p>
+          <p>
+            5. ➡️ Next Level: The level counter will advance, and another color
+            will blink.
+          </p>
+          <p>
+            6. 🔄 Remember Sequence: Now, remember the current blinked color as
+            well as the previous one.
+          </p>
+          <p>
+            7. 🔗 Click in Sequence: Click all colors from the beginning in the
+            correct sequence, one by one.
+          </p>
+          <p>
+            8. ❌ Incorrect Sequence: If your clicked sequence is wrong, you
+            lose the game, and your score will be displayed above.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".homeBtn").addEventListener("click" , () => {
+          location.href = "index.html";
+      });
+  </script>
+  </body>
+</html>

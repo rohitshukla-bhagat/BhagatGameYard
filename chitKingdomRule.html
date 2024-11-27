@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chit Kingdom Rule</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ::selection {
+        background-color: orangered;
+        color: white;
+      }
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Host Grotesk", sans-serif;
+      }
+      .container {
+        width: 98vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      h1 {
+        margin-top: 0.3em;
+      }
+      .heading {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .homeBtn {
+        color: white;
+        font-size: 1em;
+        font-weight: 600;
+        opacity: 0.9;
+        width: 5em;
+        height: 2.2em;
+        margin-top: 0.5em;
+        margin-left: 2em;
+        border: 2px solid rgba(255, 70, 3, 0.996);
+        border-radius: 0.3em;
+        background-color: rgba(255, 70, 3, 0.996);
+        cursor: pointer;
+        transition: all 0.2s linear;
+        &:hover {
+          box-shadow: 0px 0px 10px rgba(255, 70, 3, 0.996);
+          background-color: rgb(12, 12, 12);
+          color: whitesmoke;
+        }
+      }
+      .text {
+        width: 60%;
+        padding: 1em 2em;
+        margin-top: 1em;
+        font-size: 0.95em;
+        border: none;
+        border-radius: 1em;
+        box-shadow: 0px 0px 10px orangered;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h2 {
+        justify-self: center;
+        margin: 0.5em 0;
+      }
+      @media screen and (width<1120px) {
+        .text {
+          width: 70%;
+        }
+        .heading {
+          width: 90%;
+        }
+      }
+      @media screen and (orientation: portrait) {
+        .text {
+          font-size: 0.8em;
+          width: 80%;
+        }
+      }
+      @media screen and (width<510px) {
+        .text {
+          width: 90%;
+        }
+        .heading {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h1><span style="color: orangered">B</span> CHIT KINGDOM</h1>
+          <button class="homeBtn">
+            Home
+          </button>
+        </div>
+        <div class="summary">
+          <h2>📜 Game Summary 🎉</h2>
+          <p>
+            ➡️ Chit Kingdom is inspired by the traditional Indian children's
+            game known as Wazir Badshah. In this game, 4 players compete using 4
+            cards: King, Prince, Soldier, and Thief.
+          </p>
+          <p><b>➡️ Scoring:</b></p>
+          <ul>
+            <li>King: 5000 points</li>
+            <li>Prince: 1000 points</li>
+            <li>Soldier: 500 points</li>
+            <li>Thief: 0 points</li>
+          </ul>
+          <p>
+            ➡️ The player holding the King card is safe in each round and
+            reveals their card. The player with the Prince card selects the
+            Thief from the other players (excluding the King). If the Prince
+            guesses correctly, points are awarded based on the card. If the
+            guess is incorrect, the Prince's score drops to 0, and the Thief
+            gains 1000 points
+          </p>
+          <p>
+            ➡️ Players continue this process through multiple rounds,
+            culminating in the final round where they can view their scores.
+            Enjoy the game! 🎊
+          </p>
+        </div>
+        <div class="rules">
+          <h2>🎭 Chit Kingdom Game Rules 👑</h2>
+          <p>
+            1. 📝 Enter Player Names: Input the names of the players and the
+            number of chances.
+          </p>
+          <p>
+            2. 🚫 Name Restrictions: Player names must not contain numbers or
+            special characters.
+          </p>
+          <p>
+            3. ⚖️ Valid Chances: The number of chances should be greater than 0.
+          </p>
+          <p>4. 🎮 Start the Game: Click the Play button to begin.</p>
+          <p>
+            5. 🔄 Rotate Cards: Click the Jumble button to shuffle the cards.
+          </p>
+          <p>
+            6. 👑 Prince's Turn: The player holding the Prince card has the
+            right to select the Thief among the hidden cards.
+          </p>
+          <p>
+            7. ✅ Check Selection: Click the Check button to reveal the choice.
+          </p>
+          <p>
+            8. 📊 Update Scores: Scores will be added in the scores section.
+          </p>
+          <p>9. ➡️ Next Round: Click the Next Round button to continue.</p>
+          <p>
+            10. 🔄 Repeat: Repeat steps 5-9 for each round. In the final round,
+            click the Final Result button to check player scores after all
+            rounds are completed.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".homeBtn").addEventListener("click" , () => {
+          location.href = "index.html";
+      });
+  </script>
+  </body>
+</html>
